@@ -2722,3 +2722,57 @@ img, video, iframe {
     min-width: 44px;
   }
 }
+
+.achievements,
+.contact,
+.skills {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 700px) {
+  .achievements,
+  .contact,
+  .skills {
+    padding-left: 1.2rem !important;
+    padding-right: 1.2rem !important;
+    padding-top: 2rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  .hero-buttons {
+    justify-content: center !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .hero-buttons .btn {
+    width: 90%;
+    max-width: 320px;
+    margin: 0.3rem 0;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .achievements,
+  .contact,
+  .skills {
+    padding-left: 0.7rem !important;
+    padding-right: 0.7rem !important;
+    padding-top: 1.2rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 260px;
+    margin: 0.2rem 0;
+  }
+}
